@@ -3,8 +3,14 @@ from .models import *
 
 
 class ImageCreateSerializer(serializers.ModelSerializer):
-    cod = serializers.ReadOnlyField(source='article')
 
     class Meta:
-        model = ArticleImage
-        fields = ['image', 'cod']
+        model = ImageCode
+        fields = ['image']
+
+
+class ImagelistSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = ImageCode
+        fields = ['image', 'code']

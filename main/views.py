@@ -5,10 +5,10 @@ from .models import *
 
 
 class ImgCodeCreateView(CreateAPIView):
-    queryset = ArticleImage.objects.all()
+    queryset = ImageCode.objects.all()
     serializer_class = ImageCreateSerializer
 
 
 class ImgList(ListAPIView):
-    queryset = ArticleImage.objects.all()
-    serializer_class = ImageCreateSerializer
+    queryset = ImageCode.objects.all()
+    serializer_class = ImagelistSerializer

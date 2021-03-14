@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ArticleImage
+from .models import ImageCode
 
-admin.site.register(ArticleImage)
+admin.site.register(ImageCode)
 # Register your models here.
